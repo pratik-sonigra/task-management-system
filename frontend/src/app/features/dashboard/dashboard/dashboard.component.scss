@@ -1,0 +1,80 @@
+.dashboard-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .task-card {
+    flex: 1 1 30%;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 16px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr; /* One column for title and content */
+    gap: 1rem;
+  
+    mat-card-title {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #4a5568;
+      text-align: center;
+    }
+  
+    .card-content {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: 1fr; /* Single column for each item on a separate line */
+    }
+  
+    .item {
+      display: flex; /* Flexbox to align label and value on the same line */
+      justify-content: space-between; /* Space between label and value */
+      align-items: center; /* Vertically center label and value */
+    }
+  
+    .label {
+      font-weight: bold;
+      color: #2d3748;
+      margin-right: 1rem; /* Space between label and value */
+    }
+  
+    .value {
+      text-align: right;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #4a5568;
+    }
+  
+    .mat-list-item {
+      display: flex;
+      align-items: center;
+      .task-status,
+      .user-name {
+        font-size: 1.1rem;
+      }
+      .count {
+        font-weight: bold;
+      }
+      mat-icon {
+        margin-right: 0.75rem;
+      }
+    }
+  
+    /* Additional style for the total tasks */
+    .total-tasks {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #4a5568;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .task-card {
+      flex: 1 1 100%;
+    }
+  }

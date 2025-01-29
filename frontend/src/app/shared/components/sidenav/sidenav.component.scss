@@ -1,0 +1,21 @@
+.sidenav-container {
+    height: 100vh;
+    display: flex;
+    
+    mat-drawer {
+      width: 250px;
+      display: flex;
+      flex-direction: column; /* Make the drawer a flex container */
+      background-color: #fff;
+    }
+    
+    mat-drawer-content {
+      flex-grow: 1;
+      padding: 16px;
+    }
+  
+    mat-divider {
+      margin: 8px 0;
+      background-color: #ccc;
+    }
+  }

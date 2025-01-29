@@ -1,0 +1,15 @@
+.sidenav-container {
+    height: 100vh;
+    display: flex;
+  
+    mat-drawer {
+      width: 250px;
+    }
+  
+    mat-drawer-content {
+      flex-grow: 1;
+      padding: 16px;
+      background: #f5f5f5;
+      overflow: auto;
+    }
+  }

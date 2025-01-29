@@ -1,0 +1,6 @@
+<ng-container *ngIf="showSideNav; else noSideNav">
+    <app-side-nav></app-side-nav>
+  </ng-container>
+  <ng-template #noSideNav>
+    <router-outlet></router-outlet>
+  </ng-template>

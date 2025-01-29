@@ -1,0 +1,43 @@
+<div class="task-list-container">
+    <h1>Task List</h1>
+    <app-task-filters (filterChanged)="onFilterChanged($event)"></app-task-filters>
+    
+    <table mat-table [dataSource]="tasks" class="mat-elevation-z8">
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef> ID </th>
+        <td mat-cell *matCellDef="let task"> {{ task.taskId }} </td>
+      </ng-container>
+  
+      <ng-container matColumnDef="title">
+        <th mat-header-cell *matHeaderCellDef> Title </th>
+        <td mat-cell *matCellDef="let task"> {{ task.title }} </td>
+      </ng-container>
+  
+      <ng-container matColumnDef="status">
+        <th mat-header-cell *matHeaderCellDef> Status </th>
+        <td mat-cell *matCellDef="let task"> {{ task.status }} </td>
+      </ng-container>
+  
+      <ng-container matColumnDef="dueDate">
+        <th mat-header-cell *matHeaderCellDef> Due Date </th>
+        <td mat-cell *matCellDef="let task"> {{ task.dueDate | date }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="actions">
+        <th mat-header-cell *matHeaderCellDef> Actions </th>
+        <td mat-cell *matCellDef="let task">
+          <button mat-icon-button color="primary" *ngIf="isAdmin" (click)="editTask(task.taskId)">
+            <mat-icon>edit</mat-icon>
+          </button>
+  
+          <!-- Show Delete button only for Admin -->
+          <button mat-icon-button color="warn" *ngIf="isAdmin" (click)="deleteTask(task.taskId)">
+            <mat-icon>delete</mat-icon>
+          </button>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="['id', 'title', 'status', 'dueDate', 'actions']"></tr>
+      <tr mat-row *matRowDef="let row; columns: ['id', 'title', 'status', 'dueDate', 'actions'];"></tr>
+    </table>
+  </div>

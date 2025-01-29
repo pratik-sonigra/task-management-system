@@ -1,0 +1,22 @@
+<mat-drawer-container class="sidenav-container">
+    <mat-drawer mode="side" opened>
+      <mat-toolbar color="primary">Task Management</mat-toolbar>
+      <mat-nav-list>
+        <!-- Show Dashboard only for Admin roles -->
+        <a mat-list-item *ngIf="isAdmin()" routerLink="/dashboard" routerLinkActive="active-link">Dashboard</a>
+        <a mat-list-item routerLink="/tasks" routerLinkActive="active-link">Tasks</a>
+        
+        <mat-divider></mat-divider>
+  
+        <!-- Current Username and Logout -->
+        <a mat-list-item>User: {{ currentUser.username }}</a>
+        <a mat-list-item (click)="logout()">
+          <span>Logout</span>
+        </a>
+      </mat-nav-list>
+    </mat-drawer>
+  
+    <mat-drawer-content class="main-content">
+      <router-outlet></router-outlet>
+    </mat-drawer-content>
+  </mat-drawer-container>

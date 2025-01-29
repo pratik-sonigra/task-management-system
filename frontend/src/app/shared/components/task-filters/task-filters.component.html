@@ -1,0 +1,30 @@
+<mat-toolbar class="filter-toolbar">
+    <div class="toolbar-content">
+        <button mat-raised-button *ngIf="isAdmin()" class="create-task-btn" (click)="navigateToCreateTask()">
+          Create Task
+        </button>
+  
+      <div class="filter-container">
+        <mat-form-field appearance="outline">
+          <mat-label>Search by Title</mat-label>
+          <input matInput [(ngModel)]="filter.title" (keyup)="onFilterChange()" />
+        </mat-form-field>
+  
+        <mat-form-field appearance="outline">
+          <mat-label>Status</mat-label>
+          <mat-select [(ngModel)]="filter.statusId" (selectionChange)="onFilterChange()">
+            <mat-option *ngFor="let status of statuses" [value]="status.statusId">
+              {{ status.name }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+  
+        <mat-form-field appearance="outline">
+          <mat-label>Due Date</mat-label>
+          <input matInput [matDatepicker]="picker" [(ngModel)]="filter.dueDate" (dateChange)="onFilterChange()" />
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+      </div>
+    </div>
+  </mat-toolbar>

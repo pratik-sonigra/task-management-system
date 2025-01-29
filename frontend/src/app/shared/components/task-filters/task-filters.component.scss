@@ -1,0 +1,25 @@
+.filter-toolbar {
+    padding: 8px;
+    display: flex;
+  
+    .toolbar-content {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+    }
+  
+    .create-task-btn {
+      width: 200px;
+    }
+  
+    .filter-container {
+      display: flex;
+      gap: 16px;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    mat-form-field {
+        width: 200px;
+      }
+}  

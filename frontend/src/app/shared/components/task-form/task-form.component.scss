@@ -1,0 +1,63 @@
+.task-form-container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+  
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+      color: #333;
+    }
+  
+    mat-form-field {
+      width: 100%;
+    }
+  
+    button {
+      width: 100%;
+      margin-top: 20px;
+      font-size: 1rem;
+      padding: 10px;
+      border-radius: 5px;
+  
+      &.mat-raised-button {
+        font-weight: bold;
+      }
+    }
+  
+    .full-width {
+      width: 100%;
+    }
+  
+    .mat-error {
+      font-size: 0.9rem;
+      color: #e53935;
+    }
+  
+    @media (max-width: 768px) {
+      .task-form-container {
+        padding: 15px;
+        margin: 20px;
+      }
+  
+      h1 {
+        font-size: 1.2rem;
+      }
+  
+      button {
+        font-size: 0.9rem;
+        padding: 8px;
+      }
+    }
+  }

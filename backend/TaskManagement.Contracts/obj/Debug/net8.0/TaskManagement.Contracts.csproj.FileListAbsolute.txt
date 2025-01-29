@@ -1,0 +1,11 @@
+C:\Users\prati\source\repos\TaskManagementApp\TaskManagement.Contracts\bin\Debug\net8.0\TaskManagement.Contracts.deps.json
+C:\Users\prati\source\repos\TaskManagementApp\TaskManagement.Contracts\bin\Debug\net8.0\TaskManagement.Contracts.dll
+C:\Users\prati\source\repos\TaskManagementApp\TaskManagement.Contracts\bin\Debug\net8.0\TaskManagement.Contracts.pdb
+C:\Users\prati\source\repos\TaskManagementApp\TaskManagement.Contracts\obj\Debug\net8.0\TaskManagement.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\prati\source\repos\TaskManagementApp\TaskManagement.Contracts\obj\Debug\net8.0\TaskManagement.Contracts.AssemblyInfoInputs.cache
+C:\Users\prati\source\repos\TaskManagementApp\TaskManagement.Contracts\obj\Debug\net8.0\TaskManagement.Contracts.AssemblyInfo.cs
+C:\Users\prati\source\repos\TaskManagementApp\TaskManagement.Contracts\obj\Debug\net8.0\TaskManagement.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\prati\source\repos\TaskManagementApp\TaskManagement.Contracts\obj\Debug\net8.0\TaskManagement.Contracts.dll
+C:\Users\prati\source\repos\TaskManagementApp\TaskManagement.Contracts\obj\Debug\net8.0\refint\TaskManagement.Contracts.dll
+C:\Users\prati\source\repos\TaskManagementApp\TaskManagement.Contracts\obj\Debug\net8.0\TaskManagement.Contracts.pdb
+C:\Users\prati\source\repos\TaskManagementApp\TaskManagement.Contracts\obj\Debug\net8.0\ref\TaskManagement.Contracts.dll

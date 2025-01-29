@@ -1,0 +1,33 @@
+<div class="dashboard-container">
+    <h1>Dashboard</h1>
+  
+    <div class="dashboard-cards">
+      <!-- Total Tasks Card -->
+      <mat-card class="task-card">
+        <mat-card-title>Total Tasks</mat-card-title>
+        <mat-card-content class="card-content">
+          <div class="total-tasks">{{ totalTasks }}</div>
+        </mat-card-content>
+      </mat-card>
+  
+      <mat-card class="task-card">
+        <mat-card-title>Tasks by Status</mat-card-title>
+        <mat-card-content class="card-content">
+          <div *ngFor="let taskStatus of tasksByStatus" class="item">
+            <div class="label">{{ taskStatus.status }}: </div>
+            <div class="value">{{ taskStatus.count }}</div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+  
+      <mat-card class="task-card">
+        <mat-card-title>Tasks Assigned to Users</mat-card-title>
+        <mat-card-content class="card-content">
+          <div *ngFor="let userTask of tasksPerUser" class="item">
+            <div class="label">{{ userTask.userName }}: </div>
+            <div class="value">{{ userTask.taskCount }}</div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
