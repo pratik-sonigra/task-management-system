@@ -33,6 +33,8 @@ First, clone this repository to your local machine:
 ```bash
 git clone <your-repo-url>
 cd task-management-project
+```
+
 2. Build and Run the Project with Docker 🐳
 To quickly spin up the application with Docker, use the following command:
 
