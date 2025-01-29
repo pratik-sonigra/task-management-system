@@ -11,3 +11,34 @@ task-management-project/
 ├── sql-scripts/ # SQL scripts for database setup 
 └── README.md # Project documentation
 
+
+## **Setup Instructions**
+
+### **Prerequisites**
+- Docker and Docker Compose
+- Node.js (for local development)
+- Angular CLI (for frontend)
+- .NET SDK (for backend)
+
+---
+
+### **1. Clone the Repository**
+```bash
+git clone <your-repo-url>
+cd task-management-project
+
+### **2. Build and Run the Project in Docker**
+docker-compose up --build
+
+### **3. Frontend (Angular)**
+cd frontend
+npm install
+ng serve
+
+### **4. Backend (ASP.NET Core)**
+cd backend
+dotnet restore
+dotnet run
+
+### **5. Database Setup
+Run the SQL scripts from the sql-scripts/ directory to set up the database.
