@@ -27,18 +27,22 @@ task-management-project/
 ```bash
 git clone <your-repo-url>
 cd task-management-project
-2. Build and Run the Project in Docker
+
+### **2. Build and Run the Project in Docker**
 bash
 docker-compose up --build
-3. Frontend (Angular)
+
+### **3. Frontend (Angular)**
 bash
 cd frontend
 npm install
 ng serve
-4. Backend (ASP.NET Core)
+
+### **4. Backend (ASP.NET Core)**
 bash
 cd backend
 dotnet restore
 dotnet run
-5. Database Setup
+
+### **5. Database Setup**
 Run the SQL scripts from the sql-scripts/ directory to set up the database.
